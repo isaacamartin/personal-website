@@ -1,0 +1,113 @@
+Getting Started with Bootstrap
+https://getbootstrap.com/docs/4.1/getting-started/introduction/
+
+CDN - Content Delivery Network
+
+
+Responsive Breakpoints
+
+@media - Media quirry lets you apply specific CSS rules depending on the size of the window.
+
+Depends on devices minimum width
+
+    @media(min-width:576px) - small screens 'sm' breakpoint
+    @media(min-width:768px) - medium screens 'md' breakpoint
+    @media(min-width:992px) - large screens 'lg' breakpoint
+    @media(min-width:1200px) - extra large screens 'xl' breakpoint
+
+Grid System
+
+    NOTE - Rows are limited to 12 columns
+
+    Containers - think of them like tables: with headers rows and columns 
+
+    Container  - root of Grid
+    Container class - large gutters
+    Container-fluid class - smaller gutters
+
+    Row elements - group items horizontaly across page and Manage columns
+    Rows manage horizontal alighnment
+    col elements - inside rows
+
+    Class col-<number of columns>; - shorthand for specifying how many columns should be in a row
+
+    Col-auto; column automatically adjust to content
+
+    Verticle alignment
+
+    The folowing code specifies verticle column alignment within a row.
+
+    align-items-start - aligns columns to the top of a row
+    align-items-center - aligns columns to the middle of a row
+    align-items-end - aligns columns to the bottom of a row
+    
+    Self alignment
+
+    align-self - Much like the other alignment options, align-self gives you control of the individual columns vertical position within a row.
+
+    Example - <div class="col align-self-start"> column will be at the top of the row
+
+    Breakpoints
+
+        Breakpoints determine what happens to elements when the screen is a certain size or its orientation changes.
+
+        The example below will cause the column to take the space of 5 columns at the lm or 768px breakpoint and 576px at the sm breakpoint
+
+        <div class="col-lm-5 col-xl-3">
+
+Offset columns
+
+    The offset property lets you position columns within a row.
+    Using an offset with a breakpoint lets you control what happens to that column on different screens.
+
+    Breakpoints are not required when using an offset
+
+    <div class="col-sm-3 offset-sm-3">
+
+Forms
+
+    form-group - Bootstrap keyword for grouping form items (label, input etc.)
+        div class="form-group"
+
+        form-control - gives the form basic visual styling provided by bootstrap
+
+        input type="text" class="form-control"
+
+Form Grid
+
+    form-row - 
+
+    <div class="form-row"> - putting your forms into
+
+Input Group
+        
+        Important! The use of "sm" here does not corrolate to screensize
+
+        input-group-sm, md, lg, xl - use this on a group of inputs to shrink or increase their verticle size slightly.
+
+        input-group-prepend - used to attach text to the end any element
+        input-group-append - used to attach text to the beginning any element
+
+
+Colors and color-schemes in Bootstrap
+
+        Color names availible in Bootstrap:
+        primary
+        secondary
+        success
+        danger
+        warning
+        info
+        light
+        dark
+        muted
+        white
+
+    bg-<color name> specifies the background color of an element
+    text-<color name> specifies the color of text
+
+    Buttons in Bootstrap
+
+        btn - gives buttons the default button style in      bootstrap
+            - can be applied to various elements
+             
